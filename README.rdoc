@@ -1,0 +1,4 @@
+= redmine_ckeditor_email_images
+
+redmine version: 2.6.0
+ckeditor plugin version: 1.0.16
