@@ -1,0 +1,5 @@
+# Simplified Chinese strings go here for Rails i18n
+zh:
+  ckeditor_email_images:
+    enable_log: '启用日志'
+    enable_log_info: '勾选后，在 log/ckeditor_email_images.log 文件中记录日志'
