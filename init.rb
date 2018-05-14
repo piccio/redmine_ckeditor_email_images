@@ -12,7 +12,7 @@ Redmine::Plugin.register :redmine_ckeditor_email_images do
   name 'Redmine Ckeditor Email Images plugin'
   author 'Roberto Piccini'
   description 'insert images in html notification'
-  version '0.0.2'
+  version '2.0.1'
   url 'https://github.com/piccio/ckeditor_email_images.git'
   author_url 'https://github.com/piccio'
 
