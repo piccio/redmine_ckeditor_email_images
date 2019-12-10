@@ -26,10 +26,8 @@ module RedmineCkeditorEmailImages
           RedmineCkeditorEmailImages::CkeditorEmailImagesLogger.write(:info, "IMAGE URL=#{image_url}")
           attachment_url = image_url
           if File.exist?(File.join(Rails.public_path, image_url))
-            image_name = File.basename(image_url)
-            RedmineCkeditorEmailImages::CkeditorEmailImagesLogger.write(:info, "IMAGE NAME=#{image_name}")
-            related.attachments.inline[image_name] = File.read(File.join(Rails.public_path, image_url))
-            attachment_url = related.attachments[image_name].url
+            related.attachments.inline[image_url] = File.read(File.join(Rails.public_path, image_url))
+            attachment_url = related.attachments[image_url].url
             RedmineCkeditorEmailImages::CkeditorEmailImagesLogger.write(
               :info, "ATTACHMENT URL=#{attachment_url}")
           end
